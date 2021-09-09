@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
+
+
+
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        
+    //CLASE 3 VAR & LET *********************************
+        let clase3 =`
+       
+        * * CLASE 3 VAR & LET **
+        
+        `;
+        console.log(clase3);
+
+        var hola = "Hola mundo";
+        console.log(hola);
+        let hola2 = "hello World";
+        console.log(hola2);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hola2);
+
+        if (true) {
+            var a = 3;
+            console.log(a);
+        }
+
+        let musica = "Rock";
+        console.log("Variable Musica antes del Bloque", musica);
+        // Bloque
+        {
+           let musica = "Pop";
+           console.log("Variable Musica dentro del Bloque", musica); 
+        }
+        console.log("Variable Musica dentro del Bloque", musica);
+
+    //CLASE 4 CONSTANTES ************************************
+        let clase4 =`
+       
+        * * CLASE 4 CONSTANTES **
+        
+        `;
+        console.log(clase4);
+
+        let f;
+        const PI =3.1416;
+        const NUEVE=9;
+        console.log(PI);
+
+        f="many";
+
+        console.log(f); 
+
+        const objeto ={
+            nombre:"many",
+            edad:26
+        }
+        let colores=["Blanco","Verde","Azul"];
+
+        console.log(objeto);
+        console.log(colores);
+
+        objeto.correo="many@hotmail.com";
+        colores.push("Rojo");
+
+        console.log(objeto);
+        console.log(colores);
+        
+        objeto.sexo="masculino";
+        console.log(objeto);
+
+
+    //CLASE 5 CADENAS DE TEXTO (String) ********************
+        let clase5 =`
+       
+        * * CLASE 5 CADENAS DE TEXTO (String) **
+        
+        `;
+        console.log(clase5);
+        /*
+        MDN = google / recursos para desarrolladores
+        */
+       
+        let nombre = "Emanuel";
+        let apellido= 'Arias';
+        let saludo = new String("Hola Mundo");
+        let lorem = "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, tempore! Recusandae non modi sit repellendus ipsa voluptates facilis accusamus delectus aliquam, alias optio cumque quisquam officiis in molestiae cum magni!    ";
+
+        console.log(nombre.length,
+        apellido.length,
+        saludo.length,
+        nombre.toUpperCase(),
+        apellido.toLocaleLowerCase(),
+        lorem.includes("emanuel"),
+        lorem.trim(),
+        lorem.split(" "),
+        lorem.split(",")
+        );
+        console.log(lorem);
+
+    //CLASE 6 Temple String *********************************
+        let clase6 =`
+       
+        * * CLASE 6 Temple String (String) **
+        
+        `;
+        console.log(clase6);
+        //Conctencacion
+        let nombre2 = "Emanuel";
+        let apellido2 = "Arias";
+        let saludo2 = "Hola "+ nombre2 +" "+ apellido2;
+
+        console.log(saludo2);
+
+        //Interpolacion de variables
+        let saludo3 = `Hola mi nombre es ${nombre2} ${apellido2}`; 
+        console.log(saludo3);
+        //Templete String
+        let ul =`
+            <ul>
+                <li>Primavera</li>
+                <li>Verano</li>
+                <li>Otoño</li>
+                <li>Invierno</li>
+            </ul>`;
+        console.log(ul);
+
+        //concatenacion tradicional String
+        let ul3 ="<ul>"
+            ul3 +="<li>Primavera</li>"
+            ul3 +="<li>Verano</li>"
+            ul3 +="<li>Otoño</li>"
+            ul3 +="<li>Invierno</li>"
+            ul3 +=" </ul>";
+        console.log(ul3);
+
+    //CLASE 7 NUMEROS *************************************
+        let clase7 =`
+       
+        * * CLASE 7 NUMEROS **
+        
+        `;
+        console.log(clase7);
+
+        let x =2 
+        let y = new Number(1);
+        let w = 3.1416;
+        let z = "5.6"
+
+
+        console.log(x,y);
+        // .toFixed me define los decimales a mostrar
+        console.log(w.toFixed(10));
+        // parceInt, me devuelve la parte entera
+        console.log(parseInt(w));
+        // parceFloat, imprime la parte entera y parte decimal 
+        console.log(parseFloat(w));
+        // typeof nos muestra el tipo de dato de la variable
+        console.log (typeof w, typeof z);
+        console.log(x+y)
+        console.log(w+ parseFloat(z))
+
+    //CLASE 8 BOOLEANS *************************************
+        let clase8 =`
+       
+        * * CLASE 8 BOOLEANS **
+        
+        `;
+        console.log(clase8);
+
+        let verdadero = true;
+        let falso = false;
+
+        // Boolean() constructor, craccion de variables apartir del contructor
+        let i = Boolean(true);
+        let j = Boolean(false);
+
+        console.log(verdadero, falso, i, j);
+        console.log(typeof verdadero, typeof falso)
+
+
+        console.log(Boolean(0));
+        console.log(Boolean(""));
+        console.log(Boolean(-12));
+        console.log(Boolean(" "));
+    //CLASE 9  undefined, null & NaN *******************
+
+        let clase9 =`
+       
+        * * CLASE 9  undefined, null & NaN **
+        
+        `;
+        console.log(clase9);
+        // undefined indica que no se ha inicializado
+        let indefinida;
+        console.log(indefinida);
+
+        // null es un valor intencionado por el programador
+        let nulo= null;
+        console.log(nulo);
+        // NaN Not a Number
+        let noEsUnNumero = "Hola" * 3.7;
+        console.log(noEsUnNumero);
+        
+    //CLASE 10  FUNCIONES *******************
+        let clase10 =`
+       
+        * * CLASE 10  FUNCIONES **
+        
+        `;
+        console.log(clase10);
+
+        // FUNCION DECLARADA
+        function estEsUnaFuncion(){
+
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+
+        }
+        // Invocacion de funciones
+        estEsUnaFuncion();
+        
+        //Funcion que devuelve valor
+        function unaFuncionQueDevuelveValor(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+            return "La función ha retornado una cadena de texto";
+        }
+        var valorDeFuncion = unaFuncionQueDevuelveValor();
+        console.log(valorDeFuncion)
+        
+        // Funcion con parametros
+        function saludar(nombre ="desconocido", edad=0){
+            
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+        }
+        saludar("emanuel", 26);
+        saludar();
+        
+        funcionDeclarada();
+        
+        // Funciones declaradas VS funciones expresadas
+        function funcionDeclarada(){
+            console.log("esta es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, inlcuso antes de que la funcion sea declarada.");
+        }
+        funcionDeclarada();
+
+        // Funcion anonima
+        const funcionExpresada = function(){
+            console.log("esto es una funcion expresada es decir, una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de  su definicion JS nos dirá; an't access lexical declaration 'funcionExpresada' before initialization");
+        }
+        funcionExpresada();
+
+    //CLASE 11  Arreglos(Arrays) *******************
+        let clase11 =`
+       
+         * * CLASE 11  Arreglos(Arrays) **
+       
+        `;
+        
+        console.log(clase11);
+
+        const e =[];
+        const o = [1,true,"hola", ["a","b","c", [1,2,3]]];
+
+        console.log(e);
+        console.log(o.length);
+        console.log(o[3][3][0]);
+
+        const p = Array.of("x","y","z",1,2,3);
+        console.log(p);
+
+        const q = Array(100).fill(false);
+
+        console.log(q);
+
+        const colores2 = ["Rojo","Verde","Azul"];
+        console.log(colores2);
+
+        colores2.push("Negro");
+        console.log(colores2);
+
+
+        colores2.pop();
+        console.log(colores2);
+
+        colores2.forEach(function(el, i){
+            console.log(`<li id="${i}">${el}</li>`);
+        });
+    // CLASE 12 OBJETOS
+        let clase12 =`
+       
+        * *CLASE 12 OBJETOS **
+     
+        `;
+        console.log(clase12);
+
+        let h = new String("Hola");
+        console.log(h);
+        
+        const k = {}
+        console.log(k);
+        
+        const ob = new Object();
+        console.log(ob);
+        // dentro de un objeto las variables se les va ha llamar atributos/propiedad y a las funciones se les llama metodos
+        const manuel={
+            nombre : "Manuel",
+            apellido : "Arias",
+            edad : 35,
+            pasatiempo:["Guitarra","ejercicio","series"],
+            soltero:true,
+            contacto: {
+                email: "manuel@creactivmedia.com.mx",
+                facebook:"lasjkdlklajksld",
+                twitter:"kashdkashdjksah",
+                Instagram:"hasdkjahsjk"
+            },
+            saludar: function(nombre){
+                console.log(`Hola ${nombre}`)
+            },
+            decirMiNombre: function(){
+                console.log(`Hola mi nombre es: ${this.nombre} ${this.apellido}`);
+            }
+        }
+
+        console.log(manuel);
+        console.log(manuel.contacto);
+        console.log(manuel.contacto.email)
+        manuel.saludar("emanuel");
+        manuel.decirMiNombre();
+
+        console.log(Object.keys(manuel));
+        console.log(Object.values(manuel));
+        console.log(manuel.hasOwnProperty("nombre"));
+        console.log(manuel.hasOwnProperty("nacimiento"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
